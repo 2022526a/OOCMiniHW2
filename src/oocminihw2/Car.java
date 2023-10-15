@@ -8,10 +8,29 @@ package oocminihw2;
  *
  * @author 35389
  */
-public class Car extends Vehicle {
+public class Car extends Vehicle implements Drivable{
     public Car( float speed, String make,String type, int numPassengers){
             super(speed, make , type, numPassengers );
             numWheels = 4;
     
 }
+    @Override
+    public void accelrate(float speed){
+        setSpeed(speed + getSpeed());
+    }
+    @Override
+    public void brake(){
+        setSpeed(0);
+    }
+    @Override
+    public void turn (float angle){
+        setDirection(getDirection()+angle);
+    }
+
+    void accelerate(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+   
+    }
 }
