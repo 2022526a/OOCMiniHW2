@@ -8,6 +8,6 @@ package oocminihw2;
  *
  * @author 35389
  */
-public class Airplane {
-    
+public class Airplane extends Vehicle implements Flyable {
+    public Airplane(float speed, String make, String type, int numpassengers)
 }
