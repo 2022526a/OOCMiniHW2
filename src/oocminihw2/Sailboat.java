@@ -8,6 +8,8 @@ package oocminihw2;
  *
  * @author 35389
  */
-public class Sailboat {
+public class Sailboat extends Vehicle  {
+    public Sailboat(String make, String type, float speed,int numpassengers){
     
+}
 }

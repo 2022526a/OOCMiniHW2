@@ -14,6 +14,7 @@ public class OOCMiniHW2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Sailboat sailboat = new Sailboat("DocksQueen" , "Sailboat", 700, 4);
         
     }
     
